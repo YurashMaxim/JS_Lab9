@@ -1,0 +1,89 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url('https://images.wallpaperscraft.ru/image/single/chernyj_temnyj_ten_9663_1920x1080.jpg'); 
+    background-size: cover;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#game {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(215, 250, 88, 0.8);
+    border-radius: 10px;
+}
+
+.game-logo {
+    max-width: 25%;
+    height: 50%;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    margin-bottom: 20px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#results {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.player, .computer {
+    width: 40%;
+}
+
+#player-cards, #computer-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+#player-cards img, #computer-cards img {
+    width: 50%;
+    max-width: 100px;
+    height: auto;
+    margin: 5px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+#player-cards img:hover, #computer-cards img:hover {
+    transform: scale(1.1);
+}
+
+#restart {
+    display: none;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+#restart:hover{
+    background-color: #045d7a;
+    transform: scale(1.1);
+}
